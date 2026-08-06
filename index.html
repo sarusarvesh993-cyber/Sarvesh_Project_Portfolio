@@ -3,6 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Sarvesh Kommawar — AI Engineer & Data Engineer. Deployed AI projects, RAG pipelines, full-stack builds, and DevOps work.">
+<meta name="author" content="Sarvesh Kommawar">
+<meta name="theme-color" content="#050510">
+
+<!-- Open Graph / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/sarusarvesh993-cyber/Sarvesh_Project_Portfolio">
+<meta property="og:title" content="Sarvesh Kommawar | AI & Data Engineer Portfolio">
+<meta property="og:description" content="Deployed AI projects, RAG pipelines, full-stack AI products, and data engineering work.">
+<meta property="og:image" content="https://github.com/sarusarvesh993-cyber.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sarvesh Kommawar | AI & Data Engineer Portfolio">
+<meta name="twitter:description" content="AI Engineer portfolio with live apps, code repos, and professional experience.">
+
+<!-- Favicon (place favicon.ico in root or update href) -->
+<link rel="icon" type="image/png" href="https://github.com/sarusarvesh993-cyber.png">
+
 <title>Sarvesh Kommawar | AI & Data Engineer Portfolio</title>
 
 <!-- 3D & Animation Libraries (via CDN) -->
@@ -177,6 +196,14 @@ footer{text-align:center;padding:2.5rem;color:var(--muted);font-size:0.82rem;bor
 .cursor-ring{width:36px;height:36px;border:2px solid rgba(0,212,255,0.7);box-shadow:0 0 18px rgba(0,212,255,0.45),inset 0 0 12px rgba(108,99,255,0.25);margin:-18px 0 0 -18px;transition:width 0.25s,height 0.25s,background 0.25s,border-color 0.25s;}
 .cursor-ring.hover{width:64px;height:64px;background:rgba(108,99,255,0.18);border-color:rgba(108,99,255,0.9);margin:-32px 0 0 -32px;}
 .trail{position:fixed;border-radius:50%;pointer-events:none;z-index:9999;mix-blend-mode:screen;will-change:transform,opacity;}
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;}
+  .loader-ring{animation:none;border-top-color:var(--primary);}
+  .cursor-dot,.cursor-ring,.trail{display:none!important;}
+  #bg-canvas{display:none!important;}
+}
+
 @media (hover:none),(pointer:coarse){*{cursor:auto !important;}.cursor-dot,.cursor-ring{display:none;}}
 
 @media(max-width:768px){
@@ -186,6 +213,13 @@ footer{text-align:center;padding:2.5rem;color:var(--muted);font-size:0.82rem;bor
   section{padding:4rem 1.5rem;}
 }
 </style>
+<noscript>
+<style>
+.reveal{opacity:1!important;transform:none!important;}
+#loader{display:none!important;}
+#bg-canvas{display:none!important;}
+</style>
+</noscript>
 </head>
 <body>
 
@@ -203,7 +237,7 @@ footer{text-align:center;padding:2.5rem;color:var(--muted);font-size:0.82rem;bor
 <canvas id="bg-canvas"></canvas>
 
 <!-- NAV -->
-<nav id="navbar">
+<nav id="navbar" role="navigation" aria-label="Main navigation">
   <div class="logo">SK.</div>
   <ul class="nav-links">
     <li><a href="#projects">Projects</a></li>
@@ -214,7 +248,7 @@ footer{text-align:center;padding:2.5rem;color:var(--muted);font-size:0.82rem;bor
 </nav>
 
 <!-- HERO -->
-<div id="hero">
+<div id="hero" role="main" aria-label="Hero section - Sarvesh Kommawar AI Data Engineer">
   <div class="hero-glass">
     <div class="hero-badge"><span class="pulse"></span>Open to AI Engineer / Data Engineer Roles</div>
     <h1>Hi, I'm Sarvesh<br><span class="grad">AI & Data Engineer</span></h1>
@@ -239,67 +273,67 @@ footer{text-align:center;padding:2.5rem;color:var(--muted);font-size:0.82rem;bor
   <p class="sec-sub reveal">Real builds, live and open-source. Hover any card — it tilts in 3D.</p>
   <div class="projects-grid">
 
-    <div class="project-card reveal">
+    <div class="project-card reveal" role="article" aria-label="Project card">
       <div class="pc-icon">🛰️</div>
       <div class="pc-title">OpsPilot v2 <span class="pc-flag">FLAGSHIP</span></div>
       <div class="pc-desc">A cloud-native AI Copilot for DevSecOps & Cloud Infrastructure. Generates verified Terraform & CI/CD scripts, diagnoses Kubernetes logs, shows live telemetry, runs container security audits (CIS Benchmarks), and parses server logs. Built on Next.js 14 with multi-provider LLM routing + a Docker build under 120MB.</div>
       <div class="pc-tags"><span>Next.js 14</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>Multi-LLM</span></div>
       <div class="pc-links">
-        <a href="https://opspilot-v2.vercel.app/" target="_blank" class="live-link">▶ Live App</a>
-        <a href="https://github.com/sarusarvesh993-cyber/opspilot-v2" target="_blank" class="code-link">→ Code</a>
+        <a href="https://opspilot-v2.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-link">▶ Live App</a>
+        <a href="https://github.com/sarusarvesh993-cyber/opspilot-v2" target="_blank" rel="noopener noreferrer" class="code-link">→ Code</a>
       </div>
     </div>
 
-    <div class="project-card reveal">
+    <div class="project-card reveal" role="article" aria-label="Project card">
       <div class="pc-icon">📊</div>
       <div class="pc-title">Executive AI Business Analyst</div>
       <div class="pc-desc">My first full-stack AI product. Enter a business question → get an executive report with SWOT, competitor tables, risks, and strategic recommendations. React + FastAPI + OpenRouter, deployed on Vercel + Render.</div>
       <div class="pc-tags"><span>React</span><span>FastAPI</span><span>Tailwind</span><span>OpenRouter</span></div>
       <div class="pc-links">
-        <a href="https://executive-ai-business-analyst.vercel.app/" target="_blank" class="live-link">▶ Live App</a>
-        <a href="https://github.com/sarusarvesh993-cyber/Executive-AI-Business-Analyst" target="_blank" class="code-link">→ Code</a>
+        <a href="https://executive-ai-business-analyst.vercel.app/" target="_blank" rel="noopener noreferrer" class="live-link">▶ Live App</a>
+        <a href="https://github.com/sarusarvesh993-cyber/Executive-AI-Business-Analyst" target="_blank" rel="noopener noreferrer" class="code-link">→ Code</a>
       </div>
     </div>
 
-    <div class="project-card reveal">
+    <div class="project-card reveal" role="article" aria-label="Project card">
       <div class="pc-icon">🩺</div>
       <div class="pc-title">MediCare AI — Healthcare Chatbot</div>
       <div class="pc-desc">A healthcare assistant built with LangChain + FAISS RAG over a 20-document medical knowledge base. Context-aware conversations with sliding-window memory and source citations — plus <strong>safety guardrails</strong>: emergency detection, medical disclaimers, and strict no-diagnosis scope enforcement. Powered by OpenRouter (GPT-OSS-20B) with a FastAPI backend.</div>
       <div class="pc-tags"><span>Python</span><span>LangChain</span><span>FAISS</span><span>RAG</span><span>Streamlit</span><span>FastAPI</span></div>
       <div class="pc-links">
-        <a href="https://github.com/sarusarvesh993-cyber/healthcare-ai-chatbot" target="_blank" class="live-link">→ View on GitHub</a>
+        <a href="https://github.com/sarusarvesh993-cyber/healthcare-ai-chatbot" target="_blank" rel="noopener noreferrer" class="live-link">→ View on GitHub</a>
       </div>
     </div>
 
-    <div class="project-card reveal">
+    <div class="project-card reveal" role="article" aria-label="Project card">
       <div class="pc-icon">🔍</div>
       <div class="pc-title">AI Web Research Agent</div>
       <div class="pc-desc">An agentic workflow that takes a question, generates targeted search queries, fetches & reads webpages, handles blocked sources, and returns a structured research report with citations and a "what I couldn't verify" section.</div>
       <div class="pc-tags"><span>Python</span><span>Streamlit</span><span>DuckDuckGo</span><span>Trafilatura</span></div>
       <div class="pc-links">
-        <a href="https://ai-web-research-agent-ejn5mec3hkf7pn58hf5ck8.streamlit.app/" target="_blank" class="live-link">▶ Live App</a>
-        <a href="https://github.com/sarusarvesh993-cyber/AI-Web-Research-Agent" target="_blank" class="code-link">→ Code</a>
+        <a href="https://ai-web-research-agent-ejn5mec3hkf7pn58hf5ck8.streamlit.app/" target="_blank" rel="noopener noreferrer" class="live-link">▶ Live App</a>
+        <a href="https://github.com/sarusarvesh993-cyber/AI-Web-Research-Agent" target="_blank" rel="noopener noreferrer" class="code-link">→ Code</a>
       </div>
     </div>
 
-    <div class="project-card reveal">
+    <div class="project-card reveal" role="article" aria-label="Project card">
       <div class="pc-icon">🎯</div>
       <div class="pc-title">AI Job Application Agent</div>
       <div class="pc-desc">Upload a resume + paste a job description → get a structured workflow: match score, skill-gap analysis, tailored cover letter, interview prep, and a 7-day action plan.</div>
       <div class="pc-tags"><span>Python</span><span>Streamlit</span><span>pypdf</span><span>python-docx</span></div>
       <div class="pc-links">
-        <a href="https://ai-job-application-agent-g9ydk6v4hh7upp7dhxajxp.streamlit.app/" target="_blank" class="live-link">▶ Live App</a>
-        <a href="https://github.com/sarusarvesh993-cyber/AI-Job-Application-Agent" target="_blank" class="code-link">→ Code</a>
+        <a href="https://ai-job-application-agent-g9ydk6v4hh7upp7dhxajxp.streamlit.app/" target="_blank" rel="noopener noreferrer" class="live-link">▶ Live App</a>
+        <a href="https://github.com/sarusarvesh993-cyber/AI-Job-Application-Agent" target="_blank" rel="noopener noreferrer" class="code-link">→ Code</a>
       </div>
     </div>
 
-    <div class="project-card reveal">
+    <div class="project-card reveal" role="article" aria-label="Project card">
       <div class="pc-icon">📄</div>
       <div class="pc-title">PDF Chat Agent (RAG)</div>
       <div class="pc-desc">A retrieval-augmented generation system for private document intelligence. Chat with your own PDFs — grounded answers, not hallucinations. The project that started my AI Engineer journey.</div>
       <div class="pc-tags"><span>Python</span><span>RAG</span><span>Embeddings</span><span>LLM</span></div>
       <div class="pc-links">
-        <a href="https://github.com/sarusarvesh993-cyber" target="_blank" class="live-link">→ View on GitHub</a>
+        <a href="https://github.com/sarusarvesh993-cyber" target="_blank" rel="noopener noreferrer" class="live-link">→ View on GitHub</a>
       </div>
     </div>
 
@@ -389,10 +423,10 @@ footer{text-align:center;padding:2.5rem;color:var(--muted);font-size:0.82rem;bor
     <h2 class="sec-title reveal">Let's Build Something <span class="grad">With AI</span></h2>
     <p class="sec-sub reveal" style="margin:1rem auto 0;">Actively looking for AI Engineer / Data Engineer roles. Hiring? Building AI? Let's connect.</p>
     <div class="contact-links reveal">
-      <a href="/cdn-cgi/l/email-protection#2843474545495f495a1d1f684f45494144064b4745" class="contact-link">📧 Email</a>
-      <a href="https://www.linkedin.com/in/sarvesh-kommawar-3b166b278/" target="_blank" class="contact-link">💼 LinkedIn</a>
-      <a href="https://github.com/sarusarvesh993-cyber" target="_blank" class="contact-link">💻 GitHub</a>
-      <a href="tel:+918096047347" class="contact-link">📱 Call</a>
+      <a href="mailto:sarvesh.kommawar@email.com" class="contact-link" aria-label="Send email to Sarvesh Kommawar">📧 Email</a>
+      <a href="https://www.linkedin.com/in/sarvesh-kommawar-3b166b278/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Sarvesh Kommawar LinkedIn profile">💼 LinkedIn</a>
+      <a href="https://github.com/sarusarvesh993-cyber" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Sarvesh Kommawar GitHub profile">💻 GitHub</a>
+      <a href="tel:+918096047347" class="contact-link" aria-label="Call Sarvesh Kommawar">📱 Call</a>
     </div>
   </div>
 </section>
@@ -401,7 +435,7 @@ footer{text-align:center;padding:2.5rem;color:var(--muted);font-size:0.82rem;bor
   <p>© 2026 Sarvesh Kommawar · AI & Data Engineer · Built with Three.js + GSAP · Telangana, India</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* ============ LOADER ============ */
 window.addEventListener('load', () => {
   setTimeout(() => {
@@ -642,5 +676,5 @@ document.querySelectorAll('.project-card').forEach(card => {
 })();
 </script>
 
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a225e7836dad7fb1',t:'MTc4NTI2Mjg5NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>

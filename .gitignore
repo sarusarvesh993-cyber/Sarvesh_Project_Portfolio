@@ -1,0 +1,46 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Node / build artifacts (if you add a build step later)
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log
+
+# Environment / secrets (NEVER commit .env)
+.env
+.env.local
+.env.*.local
+
+# Python / data (if you add notebooks / scripts)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+
+# Assets / large files (optional — if you move media out of git)
+assets/images/*.png
+assets/images/*.jpg
+assets/videos/
+
+# GitHub Pages / deploy caches
+_site/
+.jekyll-cache/
+
+# Personal notes (optional)
+notes.txt
+TODO.md
