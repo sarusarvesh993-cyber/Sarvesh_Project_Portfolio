@@ -1,4 +1,4 @@
-# Sarvesh Kommawar — AI, Data & Analytics Portfolio
+# Sarvesh Kommawar - AI, Data & Analytics Portfolio
 
 Personal portfolio landing page for my deployed AI systems and decision-focused
 data analytics work.
