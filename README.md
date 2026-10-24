@@ -5,7 +5,7 @@ data analytics work.
 
 ## Live website
 
-https://sarusarvesh993-cyber.github.io/Sarvesh_Project_Portfolio/
+https://data-analyst-ai-portfolio.vercel.app/
 
 ## Featured data analytics portfolio
 
