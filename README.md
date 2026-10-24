@@ -9,7 +9,7 @@ https://data-analyst-ai-portfolio.vercel.app/
 
 ## Featured data analytics portfolio
 
-- **Live app:** https://data-analyst-ai-portfolio-pynrfe2h5275msvq22c7uh.streamlit.app/
+- **Live app:** https://data-analyst-ai-portfolio.vercel.app/
 - **Code and documentation:** https://github.com/sarusarvesh993-cyber/data-analyst-ai-portfolio
 
 The analytics portfolio contains seven interactive workflows covering customer
